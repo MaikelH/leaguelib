@@ -133,6 +133,11 @@ public class MatchHistoryEntry implements PlayerList {
     public LeagueChampion getChampionSelectionForSummoner(LeagueSummoner summoner) {
         return _playerChampionSelections.get(summoner.getId());
     }
+
+    public LeagueChampion getChampionSelectionForSummoner(int summonerId)
+    {
+        return _playerChampionSelections.get(summonerId);
+    }
     
     public int getStat(MatchHistoryStatType type) {
         Integer stat = _stats.get(type);
